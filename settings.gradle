@@ -1,0 +1,4 @@
+include ':library'
+
+// include ':core'
+// project(':core').projectDir = new File('../android-core/library')

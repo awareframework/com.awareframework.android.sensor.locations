@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.awareframework.android.sensor.locations">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application>
+        <service
+            android:name=".LocationsSensor"
+            android:exported="true" />
+
+        <receiver
+            android:name=".LocationsSensor$LocationsSensorBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.aware.android.sensor.locations.SENSOR_START" />
+                <action android:name="com.aware.android.sensor.locations.SENSOR_STOP" />
+                <action android:name="com.aware.android.sensor.SENSOR_START" />
+                <action android:name="com.aware.android.sensor.SENSOR_STOP" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -63,13 +63,13 @@ class LocationsSensor : AwareSensor(), LocationListener {
          */
         const val ACTION_AWARE_NETWORK_LOCATION_DISABLED = "ACTION_AWARE_NETWORK_LOCATION_DISABLED"
 
-        const val ACTION_AWARE_LOCATION_START = "com.awareframework.android.sensor.locations.SENSOR_START"
-        const val ACTION_AWARE_LOCATION_STOP = "com.awareframework.android.sensor.locations.SENSOR_STOP"
+        const val ACTION_AWARE_LOCATION_START = "com.aware.android.sensor.locations.SENSOR_START"
+        const val ACTION_AWARE_LOCATION_STOP = "com.aware.android.sensor.locations.SENSOR_STOP"
 
-        const val ACTION_AWARE_LOCATION_SET_LABEL = "com.awareframework.android.sensor.locations.SET_LABEL"
+        const val ACTION_AWARE_LOCATION_SET_LABEL = "com.aware.android.sensor.locations.SET_LABEL"
         const val EXTRA_LABEL = "label"
 
-        const val ACTION_AWARE_LOCATION_SYNC = "com.awareframework.android.sensor.locations.SENSOR_SYNC"
+        const val ACTION_AWARE_LOCATION_SYNC = "com.aware.android.sensor.locations.SENSOR_SYNC"
 
         val CONFIG = Config()
         val REQUIRED_PERMISSIONS = arrayOf(ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION)
